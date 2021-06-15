@@ -585,7 +585,7 @@ function nodeActive(a) {
         	//image_index = jQuery.inArray(image_attribute, temp_array);
         	$GP.info_name.html("<div><img src=" + f.attributes[image_attribute] + " style=\"vertical-align:middle\" /> <span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()">' + b.label + "</span></div>");
         } else {
-        	$GP.info_name.html("<div><span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()"> <h1><a href="https://reddit.com/r/' + b.label + '/"> r/' + b.label + '</a></span></h1></br></br><a href="../"' + b.attr.attributes["Modularity Class"] + '> View Nested Communities </a>');
+        	$GP.info_name.html("<div><span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()"> <h1><a href="https://reddit.com/r/' + b.label + '/"> r/' + b.label + '</a></span></h1></br></br><a href="../' + f.attributes["Modularity Class"] + '"> View Nested Communities </a>');
         }
         // Image field for attribute pane
         $GP.info_data.html(e.join("<br/>"))
